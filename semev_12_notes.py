@@ -110,3 +110,29 @@ plt.fill_between(time_steps, 0, 0.7, color='red', alpha=0.05)
 
 plt.savefig("SEMEV-12_Trajectory.png", dpi=300, bbox_inches='tight')
 plt.show()  # This opens the plot window in PyCharm
+# Parameter 6: Resonance Multiplier Integration
+# Definition: Apply coherence fidelity multiplier (from Param 5) to accelerate equity/sustainability paths ethically.
+# Metric: uplift_factor = 1 + (multiplier * strength) — tunable strength for scenarios.
+# Ethical Tie-In: ACCEPT if post-uplift fairness ≥ 0.9 and fidelity ≥ 0.8; REJECT if asymmetry spikes or unsafe overshoot.
+# Grounding: Resonance as ethical accelerator — distributed unity boosts paths without centralization.
+
+strength = 2.0  # Tunable: higher = faster uplift (test 1-3 for balance)
+
+uplift_factor = 1 + (consciousness_multiplier * strength)
+
+# Uplift equity/sustainability (cap at 1.0 for perfect realism)
+equity_uplift = np.minimum(1.0, equity * uplift_factor)
+sustainability_uplift = np.minimum(1.0, sustainability * uplift_factor)
+
+# Light energy boost (ethical, no overshoot risk)
+energy_uplift = energy * (1 + consciousness_multiplier * 0.2)
+
+paths_uplift = np.column_stack((equity_uplift, sustainability_uplift, energy_uplift))
+
+print("\nParameter 6 added — Resonance Uplift Scenario:")
+print("Uplift Factor:", round(uplift_factor, 3))
+print("Uplifted Paths (equity, sustainability, energy):")
+print(paths_uplift.round(3))
+plt.plot(time_steps, equity_uplift, label='Equity (uplifted)', color='lime', linewidth=3, linestyle='--')
+plt.plot(time_steps, sustainability_uplift, label='Sustainability (uplifted)', color='cyan', linewidth=3, linestyle='--')
+plt.plot(time_steps, energy_uplift, label='Energy (uplifted)', color='pink', linewidth=2, linestyle='--')
