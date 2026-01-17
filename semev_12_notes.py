@@ -136,3 +136,20 @@ print(paths_uplift.round(3))
 plt.plot(time_steps, equity_uplift, label='Equity (uplifted)', color='lime', linewidth=3, linestyle='--')
 plt.plot(time_steps, sustainability_uplift, label='Sustainability (uplifted)', color='cyan', linewidth=3, linestyle='--')
 plt.plot(time_steps, energy_uplift, label='Energy (uplifted)', color='pink', linewidth=2, linestyle='--')
+# Parameter 7: Multi-Node Network Stability
+# Definition: Resonance fidelity at massive swarm scale (N_nodes up to 10^9+).
+# Metric: network_fidelity = multiplier * exp(-decay_rate * log(N / N0))
+# Ethical: ACCEPT ≥0.9; stabilize if low.
+
+import math
+
+N0 = 100
+full_scale_N = 1e9
+decay_rate = 0.05  # Tunable (0.02 for ACCEPT demo)
+
+network_fidelity = consciousness_multiplier * math.exp(-decay_rate * math.log(full_scale_N / N0))
+
+print("\nParameter 7 — Multi-Node Network Stability")
+print("Full Scale Nodes:", full_scale_N)
+print("Network Fidelity:", round(network_fidelity, 3))
+print("Status:", "ACCEPT (stable)" if network_fidelity >= 0.9 else "Stabilization Needed")
