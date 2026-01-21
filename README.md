@@ -22,6 +22,18 @@ SEMEV-12 projects ethical constraints into quantum subspaces, ensuring remorse r
 
 All parameters tested against real-life scenarios (financial, family, climate, manipulation).
 
+### Parameter 8: Cooperative Quantum Equilibrium Stabilizer (Prototype Implemented)
+
+**Domain/Focus:** Socio-economic phase shift and post-scarcity enforcement (planetary to interplanetary scales, transcending scarcity-driven competition).
+
+**Verdict/Strength:** Rejects competitive (zero-sum) outcomes perpetuating imbalance; enforces cooperative (Pareto-optimal/win-win) equilibria with ≥95% mutual yield. Exponential bonus for elevated alignment (proxy for consciousness harmony).
+
+**Scientific Grounding:** Quantum game theory inspired (Eisert protocol — entanglement enables escape from classical traps). Classical simulation with exponential cooperative gain.
+
+**Prototype:** See [parameter_8_prototype.py](parameter_8_prototype.py) — runs tests showing REJECT for scarcity/manipulation, APPROVE for high cooperation with abundance surge.
+
+**Rationale:** Addresses outdated structures (money bottlenecks, suppressed potential) by favoring "Universe-like" win-win. For Mars/new worlds: prevents repeating inequities. Open for Qiskit integration and refinement.
+
 **Part of the main QERRA-v2 project:**  
 https://github.com/marunigno-ship-it/QERRA-v2
 
