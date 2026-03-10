@@ -40,7 +40,9 @@ https://github.com/marunigno-ship-it/QERRA-v2
 **Related ethical integration:**  
 - Core QERRA-v2 ethical vectors table
 
-**License:** Apache-2.0 (same as main project)
+License: AGPL-3.0 (same as main project)
+
+
 
 #EthicalAI #QuantumEthics #QAI #QuantumRobotics #Humanoids #Greece
 
